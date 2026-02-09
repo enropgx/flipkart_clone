@@ -98,7 +98,7 @@
 
     <main>
         <!-- Hero Section / Slider -->
-        <div class="container-fluid" style="margin-top: 10px; padding: 10px;">
+        <div class="container-fluid">
             <div class="slider-container">
                 <button class="slider-btn prev-btn"><i class="fa-solid fa-angle-left"></i></button>
                 <div class="slider-track">
@@ -195,6 +195,33 @@
             </div>
         </div>
     </main>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-container">
+            <button class="close-btn" id="closeModal">✕</button>
+            <div class="modal-left">
+                <h2>Login</h2>
+                <p>Get access to your Orders, Wishlist and Recommendations</p>
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png"
+                    alt="Login Illustration">
+            </div>
+            <div class="modal-right">
+                <form class="login-form">
+                    <div class="form-group">
+                        <input type="text" id="loginInput" required>
+                        <label for="loginInput">Enter Email/Mobile number</label>
+                    </div>
+                    <p class="terms">By continuing, you agree to Flipkart's <a href="#">Terms of Use</a> and <a
+                            href="#">Privacy Policy</a>.</p>
+                    <button type="submit" class="submit-btn">Request OTP</button>
+                </form>
+                <div class="create-account">
+                    <a href="#">New to Flipkart? Create an account</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container footer-container">
