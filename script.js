@@ -31,5 +31,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial resize fix
     window.addEventListener('resize', updateSlidePosition);
+    // Login Modal Logic
+    const loginModal = document.getElementById('loginModal');
+    const loginBtn = document.querySelector('.login-btn');
+    const closeBtn = document.getElementById('closeModal');
+
+    // Open Modal
+    loginBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default anchor behavior
+        loginModal.style.display = 'flex';
+    });
+
+    // Close Modal
+    closeBtn.addEventListener('click', () => {
+        loginModal.style.display = 'none';
+    });
+
+    // Close on Outside Click
+    window.addEventListener('click', (e) => {
+        if (e.target === loginModal) {
+            loginModal.style.display = 'none';
+        }
+    });
 });
 
